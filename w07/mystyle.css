@@ -1,0 +1,44 @@
+/* mystyle.css */
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0px;
+  padding: 20px;
+}
+
+#grid ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0px;
+  padding: 20px;
+}
+
+body {
+  margin: 0px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+/* 화면 크기가 800px 보다 작다면 */
+@media(max-width: 768px){
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+    font-size: 25px;
+  }
+}
+@media(max-width: 600px){
+  h1 {
+    border: 5px solid gray;
+    font-size: 50px;
+  }
+}
